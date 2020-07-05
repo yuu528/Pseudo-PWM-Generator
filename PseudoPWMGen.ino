@@ -7,7 +7,7 @@
 #define FPWM_RES  512
 
 //ピンの出力値用 0pin(RX)と1pin(TX)は使えない
-unsigned int fAnalogWritePins[18] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+volatile unsigned int fAnalogWritePins[18] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 unsigned int fAnalogWriteCount = 0; //PWM周期カウンタ
 
 void setup() {
